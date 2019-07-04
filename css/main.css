@@ -1,0 +1,400 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    padding-left: 90px;
+    padding-right: 90px;
+}
+a{
+    text-decoration: none;
+}
+h1, h4{
+    font-family: "Abril Fatface", cursive;
+}
+
+
+/***** BARRE DE NAVIGATION *****/
+    nav{
+        display: flex;
+        justify-content: space-between;
+        background-color: #222222;
+        min-height: 49px;
+        font-family: 'PT Sans Narrow', Arial, sans-serif;
+        border-bottom: solid 1px #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+    nav#barre{
+        position: fixed;
+    }
+    nav a#titre{
+        padding: 15px;
+        font-size: 1.2em;
+        color: rgb(255, 209, 72);
+        font-weight: bold;
+    }
+    nav ul li{
+        display: inline-block;
+        padding: 15px 11px 15px 11px;
+    }
+    nav ul li a{
+        color: #fff;
+        opacity: 0.7;
+        font-weight: bold;
+        font-size: 1.1em;
+    }
+    nav .btn{
+        background-color: rgb(255, 209, 72);
+        border: none;
+        padding: 8px;
+        border-radius: 2px;
+    }
+
+    nav ul li a:hover{
+        transition: all 0.5s;
+        opacity: 1;
+    }
+    nav ul li:hover{
+        background-color: #000;
+        transition: all 0.5s;
+    }
+
+/*******  HEADER  ******/
+    header{
+        width: 100%;
+        height: 600px;
+        margin-top: 50px;
+        background-image: url('../img/fond1.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    header .bloc{
+        padding-top: 58px;
+        padding-left: 105px;
+    }
+    header .bloc h1{
+        font-size: 40px;
+        color: #fff;
+        margin-top: 20px;
+    }
+    header .bloc p{
+        margin-top: 20px;
+        font-size: 22px;
+        color: #fff;
+    }
+    header .bloc .btn{
+        margin-left: 20px;
+        margin-top: 20px;
+        background-color: rgb(255, 209, 72);
+        border-radius: 0;
+        border: none;
+        padding: 15px;
+        font-size: 20px;
+        font-weight: inherit;
+    }
+
+
+/**** ACTIONS ****/
+    .actions{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        top: -85px;
+        padding-left: 105px;
+        padding-right: 105px;
+    }
+    .actions #item{
+        display: flex;
+        background-color: rgb(255, 209, 72);
+        padding: 10px;
+        height: 160px;
+        width: 340px;
+        color: rgb(17, 17, 17);
+    }
+    .actions #item .fa{
+        font-size: 28px;
+    }
+    .actions #item #texte{
+        padding-left: 20px;
+    }
+    .actions #item #texte h4{
+        font-size: 18px;
+        padding-bottom: 10px;
+    }
+
+/***** DOMAINES D'ACTIONS ****/
+    #domaines #item{
+        width: 350px;
+        border: solid 2px rgba(216, 206, 206, 0.534);
+        border-radius: 5px;
+    }
+    .head{
+        margin-top: -20px;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .head h2{
+        font-size: 1.7em;
+    }
+    .title::after {
+        content: "";
+        display: block;
+        background-color: rgb(255, 209, 72);
+        height: 0.15rem;
+        width: 4rem;
+        margin: 1.25rem auto;
+    }
+    #domaines i{
+        color: rgb(90, 90, 90);
+        font-size: 15px;
+    }
+    #domaines #cartes{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .img{
+        width: 100%;
+    }
+    #domaines #text{
+        padding: 15px;
+    }
+    #domaines .progress-bar{
+        width: 100%;
+        height: 20px;
+        background-color: rgb(243, 243, 243);
+        border-radius: 5px;
+        border: solid 1px rgb(112, 112, 112);
+    }
+    #domaines .progress-bar:before {
+        content: '';
+        display: block;
+        position: absolute;
+        
+        height: 20px;
+        background: rgb(255, 209, 72);
+    }
+    .first:before{
+        width: 70px;
+    }
+    .second:before{
+        width: 160px;
+    }
+    .third:before{
+        width: 230px;
+    }
+    #domaines .progress-bar:after {
+        content: '|||||||||||||';
+        display: block;
+        position: absolute;
+        height: 20px;
+        overflow: hidden;
+        transform: skewX(30deg);
+        font: bold 120px/80px sans-serif;
+        color: rgb(255, 228, 148);
+        opacity: 0.6;
+    }
+    .first:after{
+        width: 70px;
+    }
+    .second:after{
+        width: 160px;
+    }
+    .third:after{
+        width: 230px;
+    }
+    #domaines #pied{
+        margin-top: 15px;
+        display: flex;
+        justify-content: space-between;
+    }
+    #domaines #pied #but{
+        text-align: right;
+    }
+
+    #news{
+        margin-top: 100px;
+    }
+    #news #nouvelles{
+        display: flex;
+        justify-content: space-between;
+    }
+    .col1, .col2, .col3{
+        width: 370px;
+        display: flex;
+        flex-direction: column;
+    }
+    .cadre{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border: solid 1px rgba(65, 64, 64, 0.247);
+        padding: 15px;
+        border-radius: 5px;
+    }
+    .cadre-img{
+        border: solid 1px rgba(65, 64, 64, 0.247);
+    }
+    #nouvelles .img{
+        height: 100%;
+    }
+    #nouvelles #text{
+        padding: 20px;
+    }
+    #nouvelles #text h2{
+        margin-top: 5px;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+
+/****** DONATEURS ******/
+    #donateurs .head{
+        margin-top: 50px;
+    }
+    #donateurs #profils{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 120px;
+        padding-right: 120px;
+        margin-top: 50px;
+    }
+    .cercle{
+        border-radius: 50%;
+        width: 150px;
+    }
+    #donateurs #icones{
+        display: flex;
+        justify-content: space-between;
+    }
+    #donateurs #icones i{
+        padding: 10px;
+        background-color: rgb(179, 226, 179);
+        color: #fff;
+        font-size: 15px;
+        border-radius: 50%;
+    }
+    #donateurs #name{
+        text-align: center;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+/**** CONTACT *****/
+    #contacts .contact{
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    #contacts h2{
+        margin-bottom: 25px;
+
+    }
+    form{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    form #inputs{
+        display: flex;
+        flex-direction: column;
+    }
+    #contacts input{
+        width: 530px;
+        height: 45px;
+        border: #8f8f8f5d 1px solid;
+        font-size: 20px;
+        padding-left: 15px;
+    }
+    #label{
+        display: flex;
+        margin-bottom: 25px;
+    }
+    #label i{
+        background: silver;
+        font-size: 25px;
+        padding: 10px;
+        width: 25px;
+    }
+    #contacts #area{
+        display: flex;
+        flex-direction: column;
+    }
+    #contacts button{
+        background-color: #f08080;
+        border: none;
+        font-size: 15px;
+        width: 100%;
+        margin-top: 20px;
+        height: 40px;
+        transition: 0.5s
+    }
+    #contacts button:hover, #contacts button:active{
+        background-color: #bb4444;
+        transition: 0.5s;
+    }
+
+/*** FOOTER ****/
+    footer{
+        background-color: #222222;
+        display: flex;
+        justify-content: space-between;
+        padding: 50px;
+        color: #fff;
+        margin-top: 60px;
+        font-size: 15px;
+    }
+    footer p{
+      opacity: 0.7;
+    }
+    footer .gauche{
+      display: flex;
+      flex-direction: row;
+      margin-left: 20px;
+    }
+    footer .gauche .adresse p{
+        margin-bottom: 10px;
+    }
+    footer .adresse{
+      margin-right: 55px;
+    }
+    footer .droite{
+        margin-right: 130px;
+    }
+    footer .droite i{
+      border-radius: 0;
+      border: 1px #fff solid;
+      padding: 7px;
+      font-size: 20px;
+      color: #fff;
+      opacity: 0.6;
+      margin-right: 5px;
+    }
+    footer .droite input{
+      background-color: rgb(201, 201, 201);
+      height: 45px;
+      width: 180px;
+      border-radius: 0;
+      border: none;
+      margin-top: 10px;
+      text-align: center;
+    }
+    footer button{
+      height: 45px;
+      color: #fff;
+      border-radius: 5px;
+      border: 1px rgb(102, 250, 102) solid;
+      padding: 5px;
+      background-color: rgb(102, 250, 102);
+      transition: 0.4s;
+    }
+    footer button:hover{
+        border: 1px #fff solid;
+        background-color: rgb(255, 209, 72);
+      }
+  
